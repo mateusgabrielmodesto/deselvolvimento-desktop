@@ -1,13 +1,13 @@
-﻿<?xml version="1.0" encoding="utf-8"?>
+<?xml version="1.0" encoding="utf-8"?>
 <Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{7C1E6271-424C-4963-8014-43F2C831F5C0}</ProjectGuid>
+    <ProjectGuid>{01CD2565-CF8F-4CD5-B1CC-7040E65E260F}</ProjectGuid>
     <OutputType>WinExe</OutputType>
-    <RootNamespace>MultiApps</RootNamespace>
-    <AssemblyName>MultiApps</AssemblyName>
+    <RootNamespace>MultApps.Windows</RootNamespace>
+    <AssemblyName>MultApps.Windows</AssemblyName>
     <TargetFrameworkVersion>v4.8</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
