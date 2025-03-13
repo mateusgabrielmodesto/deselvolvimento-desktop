@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?>
+﻿<?xml version="1.0" encoding="utf-8"?>
 <Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
   <PropertyGroup>
@@ -46,6 +46,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="ClassificacaoIMC.cs" />
     <Compile Include="Form1.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -58,10 +59,20 @@
     <Compile Include="FrmCalculadoraIMC.Designer.cs">
       <DependentUpon>FrmCalculadoraIMC.cs</DependentUpon>
     </Compile>
+    <Compile Include="IMCimagem.cs" />
+    <Compile Include="Pricipal.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Pricipal.Designer.cs">
+      <DependentUpon>Pricipal.cs</DependentUpon>
+    </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <EmbeddedResource Include="FrmCalculadoraIMC.resx">
       <DependentUpon>FrmCalculadoraIMC.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Pricipal.resx">
+      <DependentUpon>Pricipal.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
