@@ -1,4 +1,4 @@
-﻿namespace MultiApps
+﻿namespace MultApps.Windows
 {
     partial class Form1
     {
