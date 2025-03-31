@@ -122,11 +122,17 @@ namespace MultApps.Windows
 
 
                     }
+
+                     if (chkCrianca.Checked == true)
+                    {
+                       if (imc <= 18.5)
+                        lblResultado.Text = $@"{textobase} abixo do normal";
+
                     else if (chkCrianca.Checked == true)
                     {
                        if (imc <= 18.5)
                         lblResultadoimc.text = $@"{textobase} abixo do normal";
-                        picboxImc.Load(IMCimagem.CriancaAbaixoDoNormal);
+
                     }
                     else if (imc > 24.9)
                     {

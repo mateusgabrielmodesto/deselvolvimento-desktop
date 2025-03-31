@@ -23,6 +23,6 @@ namespace MultApps.Windows
             form.MdiParent = this;
             form.Show();
 
-        }
+ }    
     }
 }
