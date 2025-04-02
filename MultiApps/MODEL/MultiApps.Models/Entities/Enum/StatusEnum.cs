@@ -4,9 +4,12 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace MultiApps.Models.Entidades
+namespace MultiApps.Models.Entities.Enum
 {
-    internal class Produto
+    public enum StatusEnum
     {
+        Ativo = 1, 
+        Inativo = 0,
+        Excluido = 2,
     }
 }
