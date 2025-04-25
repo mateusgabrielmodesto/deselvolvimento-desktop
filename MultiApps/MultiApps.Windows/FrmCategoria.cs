@@ -43,21 +43,21 @@ namespace MultiApps.Windows
             dataGridView1.DataSource = AutoGenerateColumns = false;
             dataGridView1.Columns.Clear();
 
-            dataGridView1.Columns.Add(new DataGridViewTexBoxColumn
+            dataGridView1.Columns.Add(new DataGridViewColumn
             {
                 DataPropertyName = "id",
-                HaaderText = "id"
+                HeaderText = "id"
             });
 
-            dataGridView1.Columns.Add(new DataGridViewTexBoxColumn
+            dataGridView1.Columns.Add(new DataGridViewColumn
             {
                 DataPropertyName = "Nome",
-                HaaderText = "Nome da categoria"
+                HeaderText = "Nome da categoria"
             });
-            dataGridView1.Columns.Add(new DataGridViewTexBoxColumn
+            dataGridView1.Columns.Add(new DataGridViewColumn
             {
                 DataPropertyName = "DataCadastro",
-                HaaderText = "Data de cadastro"
+                HeaderText = "Data de cadastro"
             });
 
             dataGridView1.Columns.Add(new DataGridViewTextBoxColumn

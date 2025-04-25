@@ -11,5 +11,6 @@ namespace MultiApps.Models.Entities.Enum
         Ativo = 1, 
         Inativo = 0,
         Excluido = 2,
+        Todos = 3,
     }
 }

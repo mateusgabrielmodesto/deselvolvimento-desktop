@@ -5,7 +5,7 @@ namespace MultiApps.Models.Entities.Abstract
 {
     public abstract class  EntidadeBase
     {
-        public int id { get; set; }
+        public int Id { get; set; }
         public DateTime DateCriacao { get; set; }
         public DateTime DataAlteracao { get; set; }
 
