@@ -39,7 +39,7 @@
             this.btnDeletar = new System.Windows.Forms.Button();
             this.txtNome = new System.Windows.Forms.TextBox();
             this.cmbStatus = new System.Windows.Forms.ComboBox();
-            this.textBox2 = new System.Windows.Forms.TextBox();
+            this.txtCadastro = new System.Windows.Forms.TextBox();
             this.txtSenha = new System.Windows.Forms.TextBox();
             this.txtEmail = new System.Windows.Forms.TextBox();
             this.txtCpf = new System.Windows.Forms.TextBox();
@@ -47,7 +47,7 @@
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
             this.label1 = new System.Windows.Forms.Label();
             this.txtId = new System.Windows.Forms.TextBox();
-            this.comboBox1 = new System.Windows.Forms.ComboBox();
+            this.cmbFiltro = new System.Windows.Forms.ComboBox();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -168,13 +168,13 @@
             this.cmbStatus.Size = new System.Drawing.Size(121, 21);
             this.cmbStatus.TabIndex = 10;
             // 
-            // textBox2
+            // txtCadastro
             // 
-            this.textBox2.BackColor = System.Drawing.SystemColors.WindowText;
-            this.textBox2.Location = new System.Drawing.Point(917, 65);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(148, 20);
-            this.textBox2.TabIndex = 11;
+            this.txtCadastro.BackColor = System.Drawing.SystemColors.WindowText;
+            this.txtCadastro.Location = new System.Drawing.Point(917, 65);
+            this.txtCadastro.Name = "txtCadastro";
+            this.txtCadastro.Size = new System.Drawing.Size(148, 20);
+            this.txtCadastro.TabIndex = 11;
             // 
             // txtSenha
             // 
@@ -237,15 +237,15 @@
             this.txtId.Size = new System.Drawing.Size(148, 20);
             this.txtId.TabIndex = 18;
             // 
-            // comboBox1
+            // cmbFiltro
             // 
-            this.comboBox1.BackColor = System.Drawing.Color.Black;
-            this.comboBox1.FormattingEnabled = true;
-            this.comboBox1.Location = new System.Drawing.Point(651, 234);
-            this.comboBox1.Name = "comboBox1";
-            this.comboBox1.Size = new System.Drawing.Size(121, 21);
-            this.comboBox1.TabIndex = 19;
-            this.comboBox1.SelectedIndexChanged += new System.EventHandler(this.comboBox1_SelectedIndexChanged);
+            this.cmbFiltro.BackColor = System.Drawing.Color.Black;
+            this.cmbFiltro.FormattingEnabled = true;
+            this.cmbFiltro.Location = new System.Drawing.Point(651, 234);
+            this.cmbFiltro.Name = "cmbFiltro";
+            this.cmbFiltro.Size = new System.Drawing.Size(121, 21);
+            this.cmbFiltro.TabIndex = 19;
+            this.cmbFiltro.SelectedIndexChanged += new System.EventHandler(this.comboBox1_SelectedIndexChanged);
             // 
             // frmCadasto
             // 
@@ -253,7 +253,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.DarkSlateGray;
             this.ClientSize = new System.Drawing.Size(1192, 564);
-            this.Controls.Add(this.comboBox1);
+            this.Controls.Add(this.cmbFiltro);
             this.Controls.Add(this.txtId);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.dataGridView1);
@@ -261,7 +261,7 @@
             this.Controls.Add(this.txtCpf);
             this.Controls.Add(this.txtEmail);
             this.Controls.Add(this.txtSenha);
-            this.Controls.Add(this.textBox2);
+            this.Controls.Add(this.txtCadastro);
             this.Controls.Add(this.cmbStatus);
             this.Controls.Add(this.txtNome);
             this.Controls.Add(this.btnDeletar);
@@ -294,7 +294,7 @@
         private System.Windows.Forms.Button btnDeletar;
         private System.Windows.Forms.TextBox txtNome;
         private System.Windows.Forms.ComboBox cmbStatus;
-        private System.Windows.Forms.TextBox textBox2;
+        private System.Windows.Forms.TextBox txtCadastro;
         private System.Windows.Forms.TextBox txtSenha;
         private System.Windows.Forms.TextBox txtEmail;
         private System.Windows.Forms.TextBox txtCpf;
@@ -302,6 +302,6 @@
         private System.Windows.Forms.DataGridView dataGridView1;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.TextBox txtId;
-        private System.Windows.Forms.ComboBox comboBox1;
+        private System.Windows.Forms.ComboBox cmbFiltro;
     }
 }

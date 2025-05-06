@@ -16,24 +16,19 @@ namespace MultiApps.Windows
 {
     public partial class frmCadasto : Form
     {
-        private object txtUltimoAcesso;
-        private object txtDataCadastro;
-        private object cmbFiltro;
-        private object cubStatus;
+ 
 
-        public object DataAlteracao { get; private set; }
-
-        public frmCadasto(object cmbFiltro)
+        public frmCadasto()
         {
             InitializeComponent();
             //Carregar o status do usuário.
             var status = new[] { "inativo", "ativo" };
             var filtros = new[] { "todos", "ativos", "inativos" };
             cmbStatus.Items.AddRange(status);
-            comboBox1.Items.AddRange(filtros);
+            cmbFiltro.Items.AddRange(filtros);
 
             cmbStatus.SelectedIndex = 1;
-            this.cmbFiltro = cmbFiltro;
+            cmbFiltro.SelectedIndex = 0;
         }
 
         private void btnSalvar_Click(object sender, EventArgs e)
@@ -132,7 +127,7 @@ namespace MultiApps.Windows
 
         private void FrmUsuarios_Load(object sender, EventArgs e)
         {
-            CarregarTodosUsuario();
+            CarregarTodosUsuario(); 
         }
 
         private void CarregarTodosUsuario()
@@ -149,7 +144,7 @@ namespace MultiApps.Windows
             txtEmail.Clear();
             txtNome.Clear();
             txtSenha.Clear();
-            textBox2.Clear();
+            txtCadastro.Clear();
             textB.Clear();
             cmbStatus.SelectedIndex = 1;
         }
@@ -157,7 +152,7 @@ namespace MultiApps.Windows
         private void comboBox1_SelectedIndexChanged(object sender, EventArgs e)
         {
             var usuarioRepository = new UsuarioRepository();
-            switch (comboBox1.SelectedIndex)
+            switch (cmbFiltro.SelectedIndex)
             {
                 case 0:
                     CarregarTodosUsuario();
@@ -195,8 +190,8 @@ namespace MultiApps.Windows
             txtCpf.Text = usuario.Cpf;
             txtEmail.Text = usuario.Email;
             txtSenha.Text = usuario.Senha;
-            txtDataCadastro.Text = usuario.DataCriacao.ToString("dd/MM/yyyy HH:mm");
-            txtUltimoAcesso.Text = usuario.DataUltimoAcesso.ToString("dd/MM/yyyy HH:mm");
+            txtCadastro.Text = usuario.DateCriacao.ToString("dd/MM/yyyy HH:mm");
+            textB.Text = usuario.DataUltimoAcesso.ToString("dd/MM/yyyy HH:mm");
             cmbStatus.SelectedIndex = (int)usuario.Status;
 
             btnCadastrar.Text = "Salvar alterações";
